@@ -1,0 +1,237 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Custom styles */
+.app {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100vh;
+  width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+}
+
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 0.625rem;
+  padding: 0.375rem;
+  align-items: center;
+  justify-content: flex-end;
+  height: 60px;
+}
+
+.header__links {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 0.875rem;
+  align-items: center;
+}
+
+.header__links a {
+  font-size: 0.8125rem;
+}
+.header__links a:hover {
+  text-decoration: underline;
+}
+
+.header__buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 0.875rem;
+  align-items: center;
+}
+
+.header__buttons a {
+  font-size: 0.875rem;
+}
+
+.header__login {
+  background-color: #1a73e8;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.5625rem 0.9375rem;
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-align: center;
+  outline: none;
+}
+
+.header__login:hover {
+  background-color: #1b66c9;
+  box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%), 0 1px 2px 0 rgb(60 64 67 / 30%);
+  -webkit-box-shadow: 0 1px 3px 1px rgb(66 64 67 / 15%),
+    0 1px 2px 0 rgb(60 64 67 / 30%);
+}
+
+.hamburger {
+  color: #000;
+  cursor: pointer;
+  padding: 0.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  /* opacity: 1; */
+  /* background-position: -64px -29px; */
+  /* vertical-align: middle; */
+}
+
+.hamburger:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+.hamburger:active,
+.hamburger:focus {
+  background-color: rgba(60, 64, 67, 0.12);
+}
+
+.hamburger svg {
+  fill: currentColor;
+  color: #5f6368;
+  opacity: 1;
+}
+
+.logo {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-end;
+  height: 267px;
+}
+
+.search {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1.8125rem;
+  padding: 1.25rem;
+  /* max-height: 160px; */
+}
+
+.search-field {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  column-gap: 0.8125rem;
+  padding: 0 0.875rem;
+  height: 44px;
+  /* width: auto; change this */
+  width: 100%;
+  max-width: 584px;
+  min-width: 308px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  box-shadow: none;
+}
+
+.search-field:hover {
+  box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+.search-field__icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.search-field__icon svg {
+  fill: currentColor;
+  color: #9aa0a6;
+  opacity: 1;
+  width: 20px;
+  height: 20px;
+}
+
+.search-field__input {
+  flex-grow: 1;
+  height: 34px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1rem;
+  word-wrap: break-word;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  min-width: 171px;
+}
+
+.search-field__micro {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.search-field__micro svg {
+  /* fill: currentColor; */
+  width: 24px;
+  height: 24px;
+}
+
+.search-field__photo {
+  cursor: pointer;
+}
+
+.search-field__photo img {
+  height: 24px;
+  width: 24px;
+}
+
+.search-buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 0.625rem;
+}
+
+.search-buttons input {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  font-size: 0.875rem;
+  padding: 0.625rem 1rem;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.search-buttons input:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.blank {
+  flex-grow: 1;
+}
+
+.footer {
+  background: #f2f2f2;
+  padding: 0.9375rem 1.875rem;
+  font-size: 0.9375rem;
+  color: #70757a;
+}
+
+/* iPad */
+@media screen and (min-width: 390px) {
+  .header {
+    padding: 0.75rem;
+  }
+}
